@@ -1,0 +1,52 @@
+$default-font-color: #000;
+$background-color: #4a90e2;
+$container-bgcolor: #f2f2f2;
+$container-bordercolor: #000;
+$button-textcolor: #fff;
+$button-hovercolor: #000;
+$button-color: #4caf50;
+$textbox-bordercolor: lightgray;
+
+h1 {
+    text-align: center;
+}
+
+@mixin mq($size) {
+    @media only screen and (min-width: $size) {
+        @content;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 16px;
+    font-family: "montserrat", sans-serif;
+    
+    width: 100%;
+    min-height: 100%;
+    @include mq(768px) {
+        font-size: 22px;
+    }
+}
+html {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://www.queenelizabethparkuganda.com/wp-content/uploads/2019/03/placeholder_thumb_1152x648.jpg");
+}
+body {
+    padding: 20%;
+}
+
+section {
+    background-color: white;
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    border: 1px solid $container-bgcolor;
+    border-radius: 10px;
+}

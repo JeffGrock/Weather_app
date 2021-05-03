@@ -1,0 +1,111 @@
+h1 {
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  font-size: 16px;
+  font-family: "montserrat", sans-serif;
+  width: 100%;
+  min-height: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  html, body {
+    font-size: 22px;
+  }
+}
+
+html {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://www.queenelizabethparkuganda.com/wp-content/uploads/2019/03/placeholder_thumb_1152x648.jpg");
+}
+
+body {
+  padding: 20%;
+}
+
+section {
+  background-color: white;
+  width: 90%;
+  max-width: 700px;
+  margin: auto;
+  border: 1px solid #f2f2f2;
+  border-radius: 10px;
+}
+
+.button {
+  width: 30%;
+  min-width: 48px;
+  min-height: 48px;
+  color: blue;
+  border: 2px solid lightgray;
+  border-radius: 10px;
+  outline: none;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+  -webkit-box-shadow: 4px 2px 5px black;
+          box-shadow: 4px 2px 5px black;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+label {
+  position: absolute;
+  left: -10000px;
+}
+
+input[type="text"] {
+  width: 80%;
+  font-size: 1.25rem;
+  border: 2px solid lightgray;
+  border-radius: 10px;
+  padding: 0.75rem;
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="text"]:hover {
+  -webkit-box-shadow: 4px 2px 5px #000;
+          box-shadow: 4px 2px 5px #000;
+}
+
+button {
+  font-size: 1.5rem;
+  background-color: #4a90e2;
+}
+
+@media only screen and (min-width: 768px) {
+  button {
+    font-size: 1.5rem;
+  }
+}
+
+.weather-display {
+  min-height: 60vh;
+  padding: 0.75rem;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script> 
+    function save_data() {
+      var input = document.getElementById("city");
+      localStorage.setItem("city",input.value); 
+      console.log('stored');
+    }
+    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="sass/style.css" />
+  <script src="js/main.js" type="module"></script>
+  <title>Jeff Grockowski weather</title>
+</head>
+
+<body>
+  <main>
+    <h1>Weather Forcast</h1>
+    <section class="search-field">
+      <form id="location-data" onsubmit="save_data()">
+        <div class="form-group">
+          <input type="text" id="city" class="form-field" size="40" name="city" placeholder="city"/>
+          <label for="city" class="form-label">City</label>
+        </div>
+        <button type="submit" class="button">Search</button>
+      </form>
+    </section>
+    <section class="weather-display">
+      <div id="container">
+        <h1>Local Conditions</h1>
+        <p id="cityName">City name</p>
+        <img id="mainicon" src='' alt="img">
+        <p id="maindescr"><p>
+        <p id='maintemp' class="main-forcast">temp</p>
+        <p id="mainhiandlow"class="main-forcast">hi/low</p>
+      </div>
+      <div id="five-day">
+        <h1 id="fivedayHeader">Your Five day Forcast</h1>
+        <img id="img2" class="forcast-icons" src="" alt="image">
+        <div id="temp2" class="forcast-box"></div>
+        <p id="descr1"></p>
+        <img id="img3" class="forcast-icons" src="" alt="image">
+        <p id="descr2"></p>
+        <div id="temp3" class="forcast-box"></div>
+        <img id="img4" class="forcast-icons" src="" alt="image">
+        <p id="descr3"></p>
+        <div id="temp4" class="forcast-box"></div>
+        <img id="img5" class="forcast-icons" src="" alt="image">
+        <p id="descr4"></p>
+        <div id="temp5" class="forcast-box"></div>
+        <img id="img6" class="forcast-icons" src="" alt="image">
+        <p id="descr5"></p>
+        <div id="temp6" class="forcast-box"></div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
+
